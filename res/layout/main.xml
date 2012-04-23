@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </TableRow>
+
+        <TextView
+            android:id="@+id/myLat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fetching lat.."
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/myLng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fetching long.."
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/myType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="Place" />
+
+        <EditText
+            android:id="@+id/myDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="your description here" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/mySend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="sendFootprint"
+            android:text="Send" />
+
+    </TableLayout>
